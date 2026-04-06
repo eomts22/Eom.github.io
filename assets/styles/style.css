@@ -43,9 +43,12 @@ ul,li{list-style: none;}
 .skillList{padding:32px; border-radius:12px; background:hsla(0,0%,100%,.8);}
 .skillList li{display:flex; align-items: flex-start; gap:20px;}
 .skillList li + li{margin-top:24px;}
-.skillList .titBox{display:flex; align-items: center; min-width:160px;}
+.skillList .titBox{display:flex; align-items: center; width:200px; flex-shrink:0;}
 .skillList .titBox img{width:32px;height:32px;}
 .skillList .titBox b{margin-left:12px; font-size:18px; font-weight:700;}
+
+/*.skillList .titBox{display:flex; align-items: center; min-width:160px;}*/
+
 
 .badgeBox{display:flex; flex-wrap:wrap; gap:12px;}
 .badgeBox span{display:inline-block; padding:0 12px; line-height:30px; height:32px; border-radius:8px; background:#000; color:#fff; font-size:14px; font-weight:500;}
@@ -101,6 +104,7 @@ ul,li{list-style: none;}
 
     .skillList li{flex-direction: column;}
     .skillList li + li{margin-top:48px;}
+    .skillList .titBox{width:auto;}
 
     .linkList{gap:24px;}
     .linkList a{display:flex; flex-direction: column; width:100%; background:#fff; border-radius:8px; padding:24px; }
