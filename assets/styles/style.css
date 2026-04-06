@@ -24,7 +24,7 @@ ul,li{list-style: none;}
 
 .wrap{position:relative;}
 .header{position:absolute; top:0; left:0; right:0; display:flex; align-items: center; padding:0 40px; width:100%; height:72px; background:transparent; }
-.header .logo a{display:block;font-size:28px; font-weight:400; color: hsla(0, 0%, 100%, .7);}
+.header .logo a{display:block;font-size:28px; font-weight:400; color: hsl(0, 0%, 100%);}
 
 .part{padding:48px;}
 .part .title{margin-bottom:48px; text-align:center; font-size:48px; font-weight:700;}
@@ -32,15 +32,16 @@ ul,li{list-style: none;}
 /* part intro */
 .part.intro{
     padding-top:90px; text-align: center;
-    background:linear-gradient(180deg, rgba(112, 93, 80, .8) 0, rgba(112, 93, 80, .8) 90%), url("../images/bg-intro.jpg") no-repeat top center/cover;
-    b{display:block; font-size:48px; font-weight:bold; color:#fff; }
-    p{margin-top:20px; line-height:1.4; font-size:18px; font-weight:500; color:hsla(0,0%,100%,.75);}
+    background:linear-gradient(180deg, rgba(243, 236, 236, .8) 0, rgba(243, 236, 236, .8) 90%), url("../images/bg-intro.jpg") no-repeat top center/cover;
+    b{display:block; font-size:48px; font-weight:bold; color:#000000; }
+    p{margin-top:20px; line-height:1.4; font-size:18px; font-weight:500; color:hsla(0, 0%, 0%, 0.75);}
 }
 
 /* part skills */
-.part.skills{background:#f9c51d; color:#000;}
+.part.skills{background:#1d45f9; color:#000;}
+.part.skills .title{color:#fff;}
 .skillList{padding:32px; border-radius:12px; background:hsla(0,0%,100%,.8);}
-.skillList li{display:flex; align-items: flex-start; gap:24px;}
+.skillList li{display:flex; align-items: flex-start; gap:20px;}
 .skillList li + li{margin-top:24px;}
 .skillList .titBox{display:flex; align-items: center; min-width:160px;}
 .skillList .titBox img{width:32px;height:32px;}
