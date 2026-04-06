@@ -40,7 +40,7 @@ ul,li{list-style: none;}
 /* part skills */
 .part.skills{background:#1d45f9; color:#000;}
 .part.skills .title{color:#fff;}
-.skillList{padding:32px; border-radius:12px; background:hsla(0,0%,100%,.8);}
+.skillList{padding:32px; border-radius:12px; background:hsla(0,0%,100%,.8); max-width:950px; margin:0 auto;}
 .skillList li{display:flex; align-items: flex-start; gap:20px;}
 .skillList li + li{margin-top:24px;}
 .skillList .titBox{display:flex; align-items: center; width:200px; flex-shrink:0;}
@@ -79,14 +79,14 @@ ul,li{list-style: none;}
 .part.archiving{background-color:#222;}
 .part.archiving .title{color:#fff;}
 
-.linkList{display:flex; flex-wrap:wrap; gap:48px;}
+.linkList{display:flex; flex-wrap:wrap; gap:48px; justify-content:center;}
 .linkList a{
-    display:flex; flex-direction: column; width:calc(50% - 24px); background:#fff; border-radius:8px; padding:24px; 
+    display:flex; flex-direction: column; width:450px; background:#fff; border-radius:8px; padding:24px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .linkList a:hover {z-index: 1; transform: scale(1.05);box-shadow: 0 10px 20px rgba(0,0,0,0.1);}
 .linkList a:hover .url{text-decoration: underline;}
-.linkList a .tit{font-size:32px; font-weight:700;}
+.linkList a .tit{font-size:32px; font-weight:600;}
 .linkList a .url{margin-top:8px; font-size:16px; color:#258ddb;}
 .linkList a .txt{margin-top:16px; font-size:18px; color:#444;}
 
