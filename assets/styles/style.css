@@ -1,0 +1,100 @@
+/* 1. Regular 설정 */
+@font-face {
+    font-family: 'aaa';
+    src: url('../fonts/a-Regular.woff2') format('woff2'),
+         url('../fonts/a-Regular.ttf') format('truetype'),
+         url('../fonts/a-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 2. Bold 설정 */
+@font-face {
+    font-family: 'aaa';
+    src: url('../fonts/a-Black.woff2') format('woff2'),
+         url('../fonts/a-Black.ttf') format('truetype'),
+         url('../fonts/a-Black.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{box-sizing:border-box; margin:0; padding:0; outline:0; border:0; font-size:14px; font-family:aaa,sans-serif; color:#000;}
+a{text-decoration: unset;}
+ul,li{list-style: none;}
+
+.wrap{position:relative;}
+.header{position:absolute; top:0; left:0; right:0; display:flex; align-items: center; padding:0 40px; width:100%; height:72px; background:transparent; }
+.header .logo a{display:block;font-size:28px; font-weight:400; color: hsla(0, 0%, 100%, .7);}
+
+.part{padding:48px;}
+.part .title{margin-bottom:48px; text-align:center; font-size:48px; font-weight:700;}
+
+/* part intro */
+.part.intro{
+    padding-top:90px; text-align: center;
+    background:linear-gradient(180deg, rgba(112, 93, 80, .8) 0, rgba(112, 93, 80, .8) 90%), url("../images/bg-intro.jpg") no-repeat top center/cover;
+    b{display:block; font-size:48px; font-weight:bold; color:#fff; }
+    p{margin-top:20px; line-height:1.4; font-size:18px; font-weight:500; color:hsla(0,0%,100%,.75);}
+}
+
+/* part skills */
+.part.skills{background:#f9c51d; color:#000;}
+.skillList{padding:32px; border-radius:12px; background:hsla(0,0%,100%,.8);}
+.skillList li{display:flex; align-items: flex-start; gap:24px;}
+.skillList li + li{margin-top:24px;}
+.skillList .titBox{display:flex; align-items: center; min-width:160px;}
+.skillList .titBox img{width:32px;height:32px;}
+.skillList .titBox b{margin-left:12px; font-size:18px; font-weight:700;}
+
+.badgeBox{display:flex; flex-wrap:wrap; gap:12px;}
+.badgeBox span{display:inline-block; padding:0 12px; line-height:30px; height:32px; border-radius:8px; background:#000; color:#fff; font-size:14px; font-weight:500;}
+.badgeBox .blue1{background:#2f74c0;}
+.badgeBox .blue2{background:#3d75a4;}
+.badgeBox .blue3{background:#3c7ce6;}
+.badgeBox .blue4{background:#38bdf8;}
+.badgeBox .blue5{background:#2468ee;}
+.badgeBox .blue6{background:#486edf;}
+.badgeBox .yellow1{background:#efd81d; color:#000;}
+.badgeBox .yellow2{background:#ffcd34; color:#000;}
+.badgeBox .yellow3{background:#f79b26;}
+.badgeBox .red1{background:#d13d35;}
+.badgeBox .red2{background:#ff4260;}
+.badgeBox .red3{background:#db4e3f;}
+.badgeBox .purple1{background:#ae36e0;}
+.badgeBox .purple2{background:#423058;}
+.badgeBox .purple3{background:#ce6b9c;}
+.badgeBox .purple4{background:#c43bad;}
+.badgeBox .green1{background:#82b355;}
+.badgeBox .green2{background:#30a26e;}
+.badgeBox .green3{background:#5bbeb5;}
+.badgeBox .dark1{background:#000; color:#fff;}
+.badgeBox .dark2{background:#0f1931; color:#fff;}
+.badgeBox .dark3{background:#113527; color:#fff;}
+
+/* part archiving */
+.part.archiving{background-color:#222;}
+.part.archiving .title{color:#fff;}
+
+.linkList{display:flex; flex-wrap:wrap; gap:48px;}
+.linkList a{
+    display:flex; flex-direction: column; width:calc(50% - 24px); background:#fff; border-radius:8px; padding:24px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.linkList a:hover {z-index: 1; transform: scale(1.05);box-shadow: 0 10px 20px rgba(0,0,0,0.1);}
+.linkList a:hover .url{text-decoration: underline;}
+.linkList a .tit{font-size:32px; font-weight:700;}
+.linkList a .url{margin-top:8px; font-size:16px; color:#258ddb;}
+.linkList a .txt{margin-top:16px; font-size:18px; color:#444;}
+
+/* footer */
+.footer{padding:24px 48px; text-align:center;}
+.footer p{color:#222;}
+
+/* 모바일 */
+@media screen and (max-width: 1024px) {
+    .skillList li{flex-direction: column;}
+    .skillList li + li{margin-top:48px;}
+
+    .linkList{gap:24px;}
+    .linkList a{display:flex; flex-direction: column; width:100%; background:#fff; border-radius:8px; padding:24px; }
+}
