@@ -32,7 +32,7 @@ ul,li{list-style: none;}
 /* part intro */
 .part.intro{
     padding-top:90px; text-align: center;
-    background:linear-gradient(180deg, rgba(112, 93, 80, .8) 0, rgba(112, 93, 80, .8) 90%), url("../images/bg.jpeg") no-repeat top center/cover;
+    background:linear-gradient(180deg, rgba(112, 93, 80, .8) 0, rgba(112, 93, 80, .8) 90%), url("../images/bg-intro.jpg") no-repeat top center/cover;
     b{display:block; font-size:48px; font-weight:bold; color:#fff; }
     p{margin-top:20px; line-height:1.4; font-size:18px; font-weight:500; color:hsla(0,0%,100%,.75);}
 }
